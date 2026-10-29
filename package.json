@@ -4,7 +4,9 @@
   "private": true,
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "dev": "pnpm --recursive --parallel dev"
   },
   "keywords": [
     "portfolio"
@@ -19,5 +21,8 @@
     }
   },
   "packageManager": "pnpm@12.16.1",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "prettier": "3.9.10"
+  }
 }
